@@ -15,6 +15,7 @@ const config: Config = {
       },
     },
     container:{
+      padding: '2rem',
       center: true,
       screens: {
         'xs': '475px',
