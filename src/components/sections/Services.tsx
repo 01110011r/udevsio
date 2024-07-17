@@ -1,15 +1,15 @@
 import Image from 'next/image'
 import React from 'react'
-import TeamLogo from '../../public/team-logo.svg'
-import PhoneLogo from '../../public/mobile-logo.svg'
-import ErpLogo from '../../public/erp-logo.svg'
-import DesignLogo from '../../public/design-logo.svg'
-import Oprimization from '../../public/optimizator-logo.svg'
-import ItConsultingLogo from '../../public/it-consulting-logo.svg'
+import TeamLogo from '../../../public/team-logo.svg'
+import PhoneLogo from '../../../public/mobile-logo.svg'
+import ErpLogo from '../../../public/erp-logo.svg'
+import DesignLogo from '../../../public/design-logo.svg'
+import Oprimization from '../../../public/optimizator-logo.svg'
+import ItConsultingLogo from '../../../public/it-consulting-logo.svg'
 
 export default function Services() {
   return (
-    <div>
+    <div className=' container'>
         <h2 className='text-blue-600 lg:text-5xl text-3xl font-semibold mb-10 lg:px-0 px-4'>Our Services</h2>
         <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 lg:gap-10 lg:px-0 px-4'>
 
