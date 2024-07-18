@@ -30,7 +30,11 @@ import LoadTesting from '../../../public/platforms/load-testing.svg'
 import DevOps from '../../../public/platforms/devops.svg'
 import Cloud from '../../../public/platforms/cloud.svg'
 import CiCd from '../../../public/platforms/cicd.svg'
-
+import Frontend from '../../../public/platforms/frontend.svg'
+import Backend from '../../../public/platforms/backend.svg'
+import UXUI from '../../../public/platforms/uxui.svg'
+import QA from '../../../public/platforms/qa.svg'
+import Consulting from '../../../public/consulting.png'
 import Image from 'next/image';
 
 export default function AboutServices() {
@@ -111,20 +115,18 @@ export default function AboutServices() {
         },
            
         {
-            title: "Development of mobile applications",
-            description: "In collaboration with startups, we have learned how to create a creative and functional user interface for mobile applications.",
+            title: "IT consulting",
+            description: "We can improve the qualifications of your employees thereby increasing the efficiency of your company",
             platforms: [
-                {icon: AppleLogo, name: 'iOS'},
-                {icon: AndroidLogo, name: 'Android'},
-                {icon: MobileLogo, name: 'Crossplatform'},
+                {icon: Frontend, name: 'Frontend'},
+                {icon: Backend, name: 'Backend'},
+                {icon: Architecture, name: 'Architekture'},
+                {icon: DevOps, name: 'DevOps'},
+                {icon: UXUI, name: 'UX/UI'},
+                {icon: QA, name: 'QA'}
             ],
-            technologies: [
-                {icon: SwiftLogo, name: 'Swift'},
-                {icon: KotlinLogo, name: 'Kotlin'},
-                {icon: FlutterLogo, name: 'Flutter'},
-            ],
-            image: {img: MobileDev, bg: true, left: true},
-            bg:true
+            image: {img: Consulting, bg: false, left: true},
+            bg:false
         },
         
     ]
@@ -136,9 +138,9 @@ export default function AboutServices() {
                 <div key={index} className={`${item.bg && 'bg-[#F4F7FF]'} py-12 w-full`}>
                     <div className='container'>
                     <h2 className='font-bold lg:text-6xl xs:text-4xl text-3xl text-blue-600 mb-3 md:w-3/4'>{item.title}</h2>
-                    <div className='flex flex-col lg:flex-row items-center justify-between gap-y-4'>
+                    <div className='flex flex-col lg:flex-row items-center justify-between gap-4'>
                     <div className={`flex flex-col gap-4 ${item.image.left && 'lg:order-1'} order-2`}>
-                        <p className='lg:w-1/2'>
+                        <p className='lg:text-xl'>
                             {item.description}
                         </p>
                         <div className='grid md:grid-cols-3 grid-cols-2 gap-2'>
@@ -163,7 +165,7 @@ export default function AboutServices() {
                         </>
                         }
                     </div>
-                    <div className={`${item.image.bg && "bg-[url('../../public/bg-pattern.png')]"} rounded-md w-2/3 bg-no-repeat bg-cover flex justify-center ${item.image.left && 'lg:order-2'} order-1`}>
+                    <div className={`${item.image.bg && "bg-[url('../../public/bg-pattern.png')]"} rounded-md w-2/3 bg-no-repeat bg-cover flex justify-center ${item.image.left && 'lg:order-2'} order-1 py-10`}>
                         <Image src={item.image.img} alt={item.title}/>
                     </div>
                     </div>
