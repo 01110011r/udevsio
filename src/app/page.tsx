@@ -1,6 +1,7 @@
 import AboutServices from "../components/sections/AboutServices";
 import Services from "../components/sections/Services";
 import Team from "../components/sections/Team";
+import Tools from "../components/sections/Tools";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
     <Services/>
     <Team/>
     <AboutServices/>
+    <Tools/>
     </main>
   );
 }
