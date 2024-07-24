@@ -20,6 +20,16 @@ export default function Tools() {
             <input type='radio' className='w-6'/>
             <span className='text-3xl font-semibold'>Backend</span>
             </label>
+
+            <label className='flex gap-2'>
+            <input type='radio' className='w-6'/>
+            <span className='text-3xl font-semibold'>DevOps</span>
+            </label>
+
+            <label className='flex gap-2'>
+            <input type='radio' className='w-6'/>
+            <span className='text-3xl font-semibold'>Testing</span>
+            </label>
           </div>
         </form>
         </div>
