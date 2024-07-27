@@ -1,10 +1,10 @@
 import React from 'react'
 import AndroidLogo from '../../../public/platforms/android-icon.svg';
 import AppleLogo from '../../../public/platforms/apple-icon.svg';
-import FlutterLogo from '../../../public/technologies/flutter-icon.svg';
-import SwiftLogo from '../../../public/technologies/swift-icon.svg';
+import FlutterLogo from '../../../public/technologies/flutter.svg';
+import SwiftLogo from '../../../public/technologies/swift.svg';
 import MobileLogo from '../../../public/platforms/mobile-icon.svg';
-import KotlinLogo from '../../../public/technologies/kotlin-icon.svg';
+import KotlinLogo from '../../../public/technologies/kotlin.svg';
 import MobileDev from '../../../public/mobile-dev.png';
 import CrmIcon from '../../../public/platforms/crm-icon.svg'
 import ELearnIcon from '../../../public/platforms/elearning-icon.svg'
@@ -154,7 +154,7 @@ export default function AboutServices() {
                         {item.technologies && <>
 
                             <h2 className='font-semibold text-2xl'>Technologies</h2>
-                            <div className='flex items-center gap-7'>
+                            <div className='flex flex-wrap items-center gap-7'>
                             {item.technologies.map((tech, idx) => (
                                 <div key={idx} className='flex flex-col gap-2'>
                                     <Image src={tech.icon} alt={tech.name+' logo'}/>
