@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 // import technologies from '../../../public/technologies/promotheus.svg'
 import { technologies } from '@/src/re-export';
+import Image from 'next/image';
 
 export default function Tools() {
 
@@ -32,7 +33,18 @@ export default function Tools() {
         </div>
 
         <div>
-          
+          {
+            technologies.map((tool, i) =>(
+              <div
+               key={i}
+               className={`${tool.type==selectedTool || tool.type==null ? `bg-[${tool.bg}]` : ' opacity-25'}`}
+               >
+                {
+                  <Image src={tool.logo} alt={tool.name + ' logo'}/>
+                }
+              </div>
+            ))
+          }
         </div>
 
 
