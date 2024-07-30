@@ -50,6 +50,22 @@ import illustrator from "../public/technologies/illustrator.svg";
 import lottie from "../public/technologies/lottie.svg";
 import ps from "../public/technologies/photoshop.svg";
 
+// clients
+import akfaMedline from "../public/clients/akfaMedline.svg"
+import cspace from "../public/clients/cspace.svg"
+import deliver from "../public/clients/delever.svg"
+import fonon from "../public/clients/fonon.svg"
+import goodzone from "../public/clients/goodzone.svg"
+import hamkorbank from "../public/clients/hamkorbank.svg"
+import hoshimovIqtisodiyoti from "../public/clients/hoshimoviqtisodiyoti.svg"
+import iman from "../public/clients/iman.svg"
+import maxtrack from "../public/clients/maxtrack.svg"
+import mytaxi from "../public/clients/mytaxi.svg"
+import rabota from "../public/clients/rabota.svg"
+import shefBurger from "../public/clients/shefBurger.svg"
+import smsuz from "../public/clients/smsuz.svg"
+import workly from "../public/clients/workly.svg"
+
 export const technologies = [
     {type: "DevOps", logo: promotheus, name: "Promotheus", bg: "#A8BFFF"},
     {type: "DevOps", logo: loki, name: "Loki", bg: "#A8BFFF"},
@@ -61,7 +77,7 @@ export const technologies = [
     {type: "Infrastructure", logo: azure, name: "Azure", bg: "#D1DDE8"},
     {type: "Infrastructure", logo: gcp, name: "GCP", bg: "#D1DDE8"},
     {type: "Infrastructure", logo: digitalocean, name: "DigitalOcean", bg: "#D1DDE8"},
-    {type: "Infrastructure", logo: aws, name: "AWS", bg: "#A8BFFF"},
+    {type: "Infrastructure", logo: aws, name: "AWS", bg: "#D1DDE8"},
     {type: "Infrastructure", logo: kubernetes, name: "Kubernetes", bg: "#D1DDE8"},
     {type: "DevOps", logo: elk, name: "ELK", bg: "#A8BFFF"},
     {type: "DevOps", logo: grafana, name: "Grafana", bg: "#A8BFFF"},
@@ -100,4 +116,25 @@ export const technologies = [
     {type: "UX/UI", logo: lottie, name: "Lottie", bg: "#CED6EE"},
     {type: "UX/UI", logo: ps, name: "Photoshop", bg: "#CED6EE"},
  
+];
+
+export const clients = [
+   [ 
+    akfaMedline,
+    cspace,
+    deliver,
+    fonon,
+    goodzone,
+    hamkorbank,
+    hoshimovIqtisodiyoti
+],
+[
+    iman,
+    maxtrack,
+    mytaxi,
+    rabota,
+    shefBurger,
+    smsuz,
+    workly
+]
 ]
