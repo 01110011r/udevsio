@@ -10,14 +10,20 @@ export default function Clients() {
       const scroll = scrollRef.current;
       if (!scroll) return;
     
-      console.log(scroll.scrollWidth)
+      console.log(fromLeft)
       const scrollWidth = scroll.scrollWidth / 2;
       const clone = scroll.cloneNode(true);
-      scroll.appendChild(clone);
+     
+      if (fromLeft) {
+        console.log('ok')
+        scroll.insertBefore(clone, scroll.firstChild); // Klon elementlarni boshiga qo'shish
+      } else {
+        scroll.appendChild(clone); // Klon elementlarni oxiriga qo'shish
+      }
     
+      const scrollSpeed = 0.5;
       let start = 0;
-      const scrollSpeed = 0.5; // Tezlikni sozlash
-    
+
       const animateScroll = () => {
        if(!fromLeft) {
         start += scrollSpeed;
@@ -26,12 +32,12 @@ export default function Clients() {
         }
         scroll.style.transform = `translateX(-${start}px)`;
        } else {
-        start = scrollWidth;
         start -= scrollSpeed;
-        if(start<=0) {
-          start = scrollWidth;
+        // console.log(start, fromLeft)
+        if(start <= -scrollWidth) {
+          start = 0;
         }
-        scroll.style.transform = `translateX(-${start}px)`;
+        scroll.style.transform = `translateX(${Math.abs(start)}px)`;
        }
         requestAnimationFrame(animateScroll);
       };
@@ -72,14 +78,14 @@ export default function Clients() {
       </SlideHandler>
       }
       {
-              <SlideHandler fromLeft={true}>
-              {
-                   [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((item, idx) => (
-                  <div key={idx} className='flex-shrink-0 w-64 h-64 bg-gray-200 flex items-center justify-center'>
-                    <p>This is the {item} item.</p>
-                  </div>
-                ))
-              }
+        <SlideHandler fromLeft={true}>
+        {
+             [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((item, idx) => (
+            <div key={idx} className='flex-shrink-0 w-64 h-64 bg-gray-200 flex items-center justify-center'>
+              <p>This is the {item} item.</p>
+            </div>
+          ))
+        }
             </SlideHandler>
       }
       </div>
