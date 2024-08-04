@@ -66,6 +66,20 @@ import shefBurger from "../public/clients/shefBurger.svg"
 import smsuz from "../public/clients/smsuz.svg"
 import workly from "../public/clients/workly.svg"
 
+import deleverTitle from "../public/delever.svg"
+import deleveryOverlay from "../public/Overlay-delivery.svg"
+import smsuzTitle from "../public/smsuz.svg"
+import smsuzOverlay from "../public/Overlay-notification.svg"
+import goodzoneTitle from "../public/goodzone.svg"
+import goodzoneOverlay from "../public/Overlay-e-commerce.svg"
+import imanTitle from "../public/iman.svg"
+import imanOverlay from "../public/Overlay-finance.svg"
+import webSite from "../public/website.svg"
+import adminPanel from "../public/admin-panel.svg"
+import crossPlatform from "../public/crossplatform.svg"
+import webDesign from "../public/web-design.svg"
+import mobileDesign from "../public/mobile-design.svg"
+
 export const technologies = [
     {type: "DevOps", logo: promotheus, name: "Promotheus", bg: "#A8BFFF"},
     {type: "DevOps", logo: loki, name: "Loki", bg: "#A8BFFF"},
@@ -137,4 +151,20 @@ export const clients = [
     smsuz,
     workly
 ]
-]
+];
+
+export const portfolio = [
+   deleverTitle,
+   deleveryOverlay,
+   smsuzTitle,
+   smsuzOverlay,
+   goodzoneTitle,
+   goodzoneOverlay,
+   imanTitle,
+   imanOverlay,
+   webSite,
+   adminPanel,
+   crossPlatform,
+   webDesign,
+   mobileDesign
+];

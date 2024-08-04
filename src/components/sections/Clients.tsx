@@ -15,10 +15,13 @@ export default function Clients() {
       const clone = scroll.cloneNode(true);
      
       if (fromLeft) {
-        console.log('ok')
-        scroll.insertBefore(clone, scroll.firstChild); // Klon elementlarni boshiga qo'shish
+        console.log(clone, scroll)
+        scroll.insertBefore(clone, scroll.lastChild); // Klon elementlarni boshiga qo'shish
+        console.log(scroll)
       } else {
+        console.log(clone, scroll)
         scroll.appendChild(clone); // Klon elementlarni oxiriga qo'shish
+        console.log(scroll)
       }
     
       const scrollSpeed = 0.5;
@@ -37,7 +40,7 @@ export default function Clients() {
         if(start <= -scrollWidth) {
           start = 0;
         }
-        scroll.style.transform = `translateX(${Math.abs(start)}px)`;
+        scroll.style.transform = `translateX(-${Math.abs(start)}px)`;
        }
         requestAnimationFrame(animateScroll);
       };
