@@ -1,5 +1,6 @@
 import AboutServices from "../components/sections/AboutServices";
 import Clients from "../components/sections/Clients";
+import Portfolio from "../components/sections/Portfolio";
 import Services from "../components/sections/Services";
 import Team from "../components/sections/Team";
 import Tools from "../components/sections/Tools";
@@ -12,6 +13,7 @@ export default function Home() {
     <AboutServices/>
     <Tools/>
     <Clients/>
+    <Portfolio/>
     </main>
   );
 }

@@ -79,6 +79,9 @@ import adminPanel from "../public/admin-panel.svg"
 import crossPlatform from "../public/crossplatform.svg"
 import webDesign from "../public/web-design.svg"
 import mobileDesign from "../public/mobile-design.svg"
+import Desktop from '../public/desktop.png'
+import MobileDev from '../public/mobile-dev.png';
+import bgPattern from "../public/bg-pattern.png";
 
 export const technologies = [
     {type: "DevOps", logo: promotheus, name: "Promotheus", bg: "#A8BFFF"},
@@ -153,7 +156,8 @@ export const clients = [
 ]
 ];
 
-export const portfolio = [
+
+export const portfolio = {
    deleverTitle,
    deleveryOverlay,
    smsuzTitle,
@@ -166,5 +170,8 @@ export const portfolio = [
    adminPanel,
    crossPlatform,
    webDesign,
-   mobileDesign
-];
+   mobileDesign,
+   desktop: Desktop,
+   mobile: MobileDev,
+   bgPattern
+};
