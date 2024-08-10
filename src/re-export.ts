@@ -83,6 +83,13 @@ import Desktop from '../public/desktop.png'
 import MobileDev from '../public/mobile-dev.png';
 import bgPattern from "../public/bg-pattern.png";
 
+import contactIcon from "../public/howwework/contact.svg"
+import analysisIcon from "../public/howwework/analysis.svg"
+import offerIcon from "../public/howwework/offer.svg"
+import teamIcon from "../public/howwework/team.svg"
+import startIcon from "../public/howwework/start.svg"
+
+
 export const technologies = [
     {type: "DevOps", logo: promotheus, name: "Promotheus", bg: "#A8BFFF"},
     {type: "DevOps", logo: loki, name: "Loki", bg: "#A8BFFF"},
@@ -175,3 +182,11 @@ export const portfolio = {
    mobile: MobileDev,
    bgPattern
 };
+
+export const howwework = {
+contactIcon,
+analysisIcon,
+offerIcon,
+teamIcon,
+startIcon
+}
