@@ -43,7 +43,7 @@ export default function Tools() {
                 {
                   <Image src={tool.logo} alt={tool.name + ' logo'} className='w-6 h-6'/>
                 }
-                <h3 className='text-sm sm:text-[12px] text-[8px]'>
+                <h3 className='lg:text-sm sm:text-[12px] text-[8px]'>
                   {tool.name}
                 </h3>
               </div>
