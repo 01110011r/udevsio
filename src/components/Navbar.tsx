@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import React, { useState } from 'react'
-import mainlogo from "../../public/udevs-logo.png"
+import mainlogo from "../../public/udevs-logo.svg"
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { IoClose } from 'react-icons/io5';
 
@@ -69,7 +69,7 @@ export default function Navbar() {
         <button className='inline-block lg:hidden' onClick={menuHandler}>
           <RxHamburgerMenu className='w-8 h-8 text-blue-600'/>
         </button>
-        <div className={`fixed bottom-0 top-0 flex flex-col justify-between bg-slate-600 duration-700 ${!menu ? '-right-full' : 'left-0 right-0 lg:hidden'}`}>
+        <div className={`fixed bottom-0 top-0 flex flex-col justify-between bg-white duration-700 ${!menu ? '-right-full' : 'left-0 right-0 lg:hidden'}`}>
           <div className='flex items-center justify-between container py-6 border-b-2'>
             <Image src={mainlogo} alt='udevsio main logo' className='w-24 h-10' />
             <button onClick={menuHandler}>
