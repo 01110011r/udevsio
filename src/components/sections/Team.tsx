@@ -4,7 +4,7 @@ import TeamImage from '../../../public/team-img.png'
 
 export default function Team() {
   return (
-    <div className='bg-[#F4F7FF] w-full py-14'>
+    <div className='bg-[#F4F7FF] w-full py-14' id='team'>
         <div className='container'>
             <h2 className='font-bold text-blue-600 text-4xl lg:mb-0 mb-4'>Team</h2>
             <div className='flex items-center justify-between lg:flex-row flex-col'>

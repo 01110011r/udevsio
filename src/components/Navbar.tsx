@@ -24,22 +24,22 @@ export default function Navbar() {
 
         <ul className='lg:flex items-center justify-between font-semibold hidden w-[70%]'>
           <li className='cursor-pointer'>
-            <a href="#">
+            <a href="#our-services">
               Direction
             </a>
           </li>
           <li className='cursor-pointer'>
-            <a href="#">
+            <a href="#team">
               Command
             </a>
           </li>
           <li className='cursor-pointer'>
-            <a href="#">
+            <a href="#our-services">
               Services
             </a>
           </li>
           <li className='cursor-pointer'>
-            <a href="#">
+            <a href="#tools">
               Tools
             </a>
           </li>

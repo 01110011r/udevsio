@@ -9,8 +9,8 @@ import ItConsultingLogo from '../../../public/it-consulting-logo.svg'
 
 export default function Services() {
   return (
-    <div className=' container'>
-        <h2 className='text-blue-600 lg:text-5xl text-3xl font-semibold mb-10 lg:px-0 px-4'>Our Services</h2>
+    <div className='container'>
+        <h2 className='text-blue-600 lg:text-5xl text-3xl font-semibold mb-10 lg:px-0 px-4'  id='our-services'>Our Services</h2>
         <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 lg:gap-10 lg:px-0 px-4'>
 
             <div className='flex flex-col gap-6 rounded-lg bg-[#F4F7FF] px-8 pt-8 pb-10'>
