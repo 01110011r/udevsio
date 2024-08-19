@@ -63,8 +63,7 @@ export default function HowWeWork() {
                 <div className='flex flex-col lg:items-center items-start lg:text-center gap-2'>
                     <h4 className='font-semibold text-xl'>Start</h4>
                     <p className='lg:max-w-[80%]'>
-                    You will get to know the team
-                    and we'll get started.
+                    You will get to know the team and we&apos;ll get started.
                     </p>
                 </div>
             </div>

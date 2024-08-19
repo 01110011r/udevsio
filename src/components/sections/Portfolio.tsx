@@ -60,9 +60,9 @@ export default function Portfolio() {
   return (
     <div className='container w-full flex flex-col gap-y-32 mt-10'>
         {
-          data.map((item) => {
+          data.map((item, idx) => {
             return (
-              <div className={"flex flex-col gap-y-5 items-center"}>
+              <div className={"flex flex-col gap-y-5 items-center"} key={idx}>
                 <div className={`lg:hidden`}>
                 <Image className={`${item.img.left && 'content-end'}`} src={item.title} alt='customer logo'/>
                 </div>
@@ -85,8 +85,8 @@ export default function Portfolio() {
 
                       <div className='grid sm:grid-cols-3 grid-cols-2 gap-2 w-full]'>
                         {
-                          item.weDid.map((platform) => {
-                            return <div className='bg-[#F4F7FF] rounded-md p-4 flex flex-col items-center justify-center'>
+                          item.weDid.map((platform, idx) => {
+                            return <div className='bg-[#F4F7FF] rounded-md p-4 flex flex-col items-center justify-center' key={idx}>
                               <Image src={platform.svg} alt='platform logo'/>
                               <span>{platform.name}</span>
                             </div>

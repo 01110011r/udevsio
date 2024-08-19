@@ -46,7 +46,7 @@ export default function Clients() {
       };
     
       animateScroll();
-    }, []);
+    }, [fromLeft]);
 
 
     return (
