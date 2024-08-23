@@ -20,30 +20,30 @@ export default function Future() {
             <h3 className='font-semibold text-xl mb-4'>About us</h3>
             <ul className='flex flex-col gap-y-1'>
               <li className='text-blue-600 hover:underline'><a href="#">Direction</a></li>
-              <li className='text-blue-600 hover:underline'><a href="#">Command</a></li>
-              <li className='text-blue-600 hover:underline'><a href="#">Tools</a></li>
-              <li className='text-blue-600 hover:underline'><a href="#">Clients</a></li>
+              <li className='text-blue-600 hover:underline'><a href="#team">Command</a></li>
+              <li className='text-blue-600 hover:underline'><a href="#tools">Tools</a></li>
+              <li className='text-blue-600 hover:underline'><a href="#clients">Clients</a></li>
             </ul>
           </div>
 
           <div>
             <h3 className='font-semibold text-xl mb-4'>Services</h3>
             <ul className='flex flex-col gap-y-1'>
-              <li className='text-blue-600 hover:underline'><a href="#">Development of mobile applications</a></li>
-              <li className='text-blue-600 hover:underline'><a href="#">Development and implementation ERP systems</a></li>
-              <li className='text-blue-600 hover:underline'><a href="#">User interface, User experience design</a></li>
-              <li className='text-blue-600 hover:underline'><a href="#">IT consulting</a></li>
-              <li className='text-blue-600 hover:underline'><a href="#">Optimization IT consulting infrastructure</a></li>
+              <li className='text-blue-600 hover:underline'><a href="#service-0">Development of mobile applications</a></li>
+              <li className='text-blue-600 hover:underline'><a href="#service-1">Development and implementation ERP systems</a></li>
+              <li className='text-blue-600 hover:underline'><a href="#service-2">User interface, User experience design</a></li>
+              <li className='text-blue-600 hover:underline'><a href="#service-3">IT consulting</a></li>
+              <li className='text-blue-600 hover:underline'><a href="#service-4">Optimization IT consulting infrastructure</a></li>
             </ul>
           </div>
 
           <div>
             <h3 className='font-semibold text-xl mb-4'>Portfolio</h3>
             <ul className='flex flex-col gap-y-1'>
-              <li className='text-blue-600 hover:underline'><a href="#">Delever</a></li>
-              <li className='text-blue-600 hover:underline'><a href="#">Sms.uz</a></li>
-              <li className='text-blue-600 hover:underline'><a href="#">Goodzone</a></li>
-              <li className='text-blue-600 hover:underline'><a href="#">Iman</a></li>
+              <li className='text-blue-600 hover:underline'><a href="#deliver">Delever</a></li>
+              <li className='text-blue-600 hover:underline'><a href="#smsuz">Sms.uz</a></li>
+              <li className='text-blue-600 hover:underline'><a href="#goodzone">Goodzone</a></li>
+              <li className='text-blue-600 hover:underline'><a href="#iman">Iman</a></li>
             </ul>
           </div>
 

@@ -144,22 +144,22 @@ export const technologies = [
 
 export const clients = [
    [ 
-    akfaMedline,
-    cspace,
-    deliver,
-    fonon,
-    goodzone,
-    hamkorbank,
-    hoshimovIqtisodiyoti
+    {logo:akfaMedline, name: "AkfaMedline"},
+    {logo:cspace, name: "C Space coworking"},
+    {logo:deliver, name: "Deliver"},
+    {logo:fonon, name: "Fonon"},
+    {logo:goodzone, name: "Goodzone"},
+    {logo:hamkorbank, name: "Hamkor Bank"},
+    {logo:hoshimovIqtisodiyoti, name: "Hoshimov Iqtisodiyoti"}
 ],
 [
-    iman,
-    maxtrack,
-    mytaxi,
-    rabota,
-    shefBurger,
-    smsuz,
-    workly
+    {logo:iman, name: "Iman"},
+    {logo:maxtrack, name: "MaxTrack"},
+    {logo:mytaxi, name: "My Taxi"},
+    {logo:rabota, name: "Rabota"},
+    {logo:shefBurger, name: "Shef Burger"},
+    {logo:smsuz, name: "Smsuz"},
+    {logo:workly, name: "Workly"}
 ]
 ];
 

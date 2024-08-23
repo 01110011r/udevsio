@@ -24,7 +24,7 @@ export default function Navbar() {
 
         <ul className='lg:flex items-center justify-between font-semibold hidden w-[70%]'>
           <li className='cursor-pointer'>
-            <a href="#our-services">
+            <a href="#">
               Direction
             </a>
           </li>
@@ -44,7 +44,7 @@ export default function Navbar() {
             </a>
           </li>
           <li className='cursor-pointer'>
-            <a href="#">
+            <a href="#clients">
               Clients
             </a>
           </li>
@@ -60,7 +60,7 @@ export default function Navbar() {
           </li>
           <li>
             <button className='bg-blue-700 px-6 py-3 rounded-md text-white'>
-              <a href="#">
+              <a href="#contact-us">
                 Contact
               </a>
             </button>

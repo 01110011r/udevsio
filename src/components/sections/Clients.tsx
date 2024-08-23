@@ -1,5 +1,7 @@
 'use client'
 import React, { useEffect, useRef } from 'react'
+import { clients } from '@/src/re-export';
+import Image from 'next/image';
 
 export default function Clients() {
 
@@ -63,8 +65,8 @@ export default function Clients() {
 
 
   return (
-    <div className='w-full'>
-      <div className='container mb-10'>
+    <div className='w-full' id='clients'>
+      <div className='container mb-10 mt-24'>
       <h2 className='text-5xl text-blue-600 font-bold'>Our Clients</h2>
       </div>
 
@@ -72,10 +74,8 @@ export default function Clients() {
       {
       <SlideHandler>
         {
-             [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((item, idx) => (
-            <div key={idx} className='flex-shrink-0 w-64 h-64 bg-gray-200 flex items-center justify-center'>
-              <p>This is the {item} item.</p>
-            </div>
+             clients[0].map((item, idx) => (
+              <Image src={item.logo} alt={item.name}/>
           ))
         }
       </SlideHandler>

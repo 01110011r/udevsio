@@ -12,7 +12,7 @@ export default function Tools() {
   };
 
   return (
-    <div className='py-14 bg-[#F4F7FF] w-full' id='tools'>
+    <div className='py-14 pt-24 bg-[#F4F7FF] w-full' id='tools'>
         <div className='container'>
         <h2 className=' lg:font-bold font-semibold text-5xl text-blue-600 mb-10'>Tools</h2>
         <div className='grid lg:flex lg:items-center lg:font-medium lg:justify-between grid-cols-2 gap-4 font-semibold mb-10'>

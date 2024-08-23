@@ -9,7 +9,7 @@ import { FaYoutube } from "react-icons/fa";
 
 export default function ContactUs() {
   return (
-    <div className='container mt-10'>
+    <div className='container mt-10 pt-24' id='contact-us'>
       <h2 className=' capitalize font-semibold lg:text-5xl text-4xl text-blue-600'>contact us</h2>
       <div className='flex flex-col lg:flex-row gap-y-16 py-16 lg:px-20 px-4 mt-5 shadow-lg rounded-md'>
         

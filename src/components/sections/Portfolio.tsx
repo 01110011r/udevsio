@@ -8,6 +8,7 @@ export default function Portfolio() {
 
     const data = [
         {
+          id:"deliver",
           title: portfolio.deleverTitle,
           overlay: portfolio.deleveryOverlay,
           text: "Delever - Delivery service automation targeted at both consumers and restaurants.",
@@ -21,6 +22,7 @@ export default function Portfolio() {
           img: {left: true, img: portfolio.mobile, bg: portfolio.bgPattern}
         },
         {
+          id:"smsuz",
           title: portfolio.smsuzTitle,
           overlay: portfolio.smsuzOverlay,
           text: "Smsuz.uz - It is a platform for bulk SMS messaging.",
@@ -32,6 +34,7 @@ export default function Portfolio() {
           img: {left: false, img: portfolio.desktop, bg: portfolio.bgPattern}
         },
         {
+          id:"goodzone",
           title: portfolio.goodzoneTitle,
           overlay: portfolio.goodzoneOverlay,
           text: "Goodzone - Internet shop of household appliances in Uzbekistan.",
@@ -45,6 +48,7 @@ export default function Portfolio() {
           img: {left: true, img: portfolio.desktop, bg: portfolio.bgPattern}
         },
         {
+          id:"iman",
           title: portfolio.imanTitle,
           overlay: portfolio.imanOverlay,
           text: "Iman - It is a mutual financing platform based on the principles of Islamic Finance. Buyers, sellers and investors meet here.",
@@ -62,7 +66,7 @@ export default function Portfolio() {
         {
           data.map((item, idx) => {
             return (
-              <div className={"flex flex-col gap-y-5 items-center"} key={idx}>
+              <div className={"flex flex-col items-center pt-32"} key={idx} id={item.id}>
                 <div className={`lg:hidden`}>
                 <Image className={`${item.img.left && 'content-end'}`} src={item.title} alt='customer logo'/>
                 </div>

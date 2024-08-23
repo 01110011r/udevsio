@@ -135,7 +135,7 @@ export default function AboutServices() {
     <>
         {
             data.map((item, index) => (
-                <div key={index} className={`${item.bg && 'bg-[#F4F7FF]'} py-12 w-full`}>
+                <div key={index} className={`${item.bg && 'bg-[#F4F7FF]'} py-24 w-full`} id={'service-'+index}>
                     <div className='container'>
                     <h2 className='font-bold lg:text-6xl xs:text-4xl text-3xl text-blue-600 mb-3 md:w-3/4'>{item.title}</h2>
                     <div className='flex flex-col lg:flex-row items-center justify-between gap-4'>
